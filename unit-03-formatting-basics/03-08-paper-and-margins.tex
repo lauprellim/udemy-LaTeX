@@ -1,0 +1,56 @@
+\documentclass[11pt]{article}
+% this package is for page size
+% \usepackage[legalpaper]{geometry}
+% \usepackage[landscape, legalpaper]{geometry}
+% geometry package can also change margins
+% \usepackage[letter, left = 0.5 in, right = 0.5in, top = 0.5 in, bottom = 0.5 in]{geometry}
+% margin attribute sets all four margins if you want to save time
+
+% for this package geometry, overleaf seems much more permissive in its acceptance
+% of attributes than the command line, which would simply be:
+% pdflatex <filename.tex>
+\usepackage[letterpaper, margin=2in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+\usepackage{comment}
+
+\title{Document Title}
+
+\author{Paul V. Miller\thanks{This is a footnote with an asterisk}\\Duquesne University \and Second Author\thanks{email: author@upitt.edu}\\University of Pittsburgh}
+
+% leave date empty and no date will appear
+% \date{}
+% today's date
+\date{\today}
+
+\begin{document}
+
+% title is a SET of fields defined above
+\maketitle
+
+% you can put an abstract here
+\begin{abstract}
+    \lipsum[7]
+\end{abstract}
+
+% This is not very elegant
+Keywords: LaTeX, editor, practice
+
+More text
+
+\iffalse
+A lot of text here will be ignored
+\fi
+
+% or do an abstract this way
+% \abstract{This is the abstract of this essay.}
+
+\section{Introduction}
+
+\lipsum[1-2]
+
+\begin{comment}
+This is another large comment
+\end{comment}
+
+\end{document}
