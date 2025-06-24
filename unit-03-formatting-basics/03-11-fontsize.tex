@@ -1,0 +1,46 @@
+\documentclass{article}
+% for inserting images
+\usepackage{graphicx}
+
+% this package gives more font face variation
+\usepackage{ulem}
+
+\title{Font Style Practice}
+\author{Paul V. Miller}
+\date{June 2025}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+If we want to underline a word or sentence, you can use the command \underline{underline}. On the other hand, we can we might want to use boldface, which can be done by invoking command \textbf{textbf}. A third face change is italic, which you do \textit{textit for italics}.
+
+You can also use \emph{emph} for italics, but not in all document packages. textit is more universal, according to Paulo.
+
+Now we are using features from the ulem package.
+\uline{The uline command} is equivalent to the command {underline}. By the way emph is now screwed up above. The ulem underline is a bit more separated from text than \underline{underline}. The uuline command can do \uuline{double underline}. This is silly: a wavy underline can be obtained \uwave{by using uwave}.
+
+The ulem package also has \sout{strikethrough}, which could be very useful in many instances...
+
+``Censorship'' (note ``quotation marks'') can be achieved by using xout: \xout{This is slacked out}. There are other examples: dashed line: \dashuline{underline with dash}. Yet another example: \dotuline{dotted underline}.
+
+\clearpage
+
+\noindent
+{\tiny this is the smallest size} \\
+{\scriptsize this is scriptsize} \\
+{\footnotesize this is footnotesize} \\
+{\small this is a small size} \\
+{\normalsize This is the normal font size}
+{\large this is large size} \\
+{\Large this is Large size} \\
+{\LARGE this is LARGE size} \\
+{\huge this is huge size} \\
+{\Huge this is Huge size} \\
+
+Return to the regular size. You can also write
+\normalsize normalsize.
+
+\end{document}
